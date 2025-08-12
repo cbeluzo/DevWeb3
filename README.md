@@ -1,5 +1,4 @@
-# DevWeb3
-Desenvolvimento Web 3
+# Desenvolvimento Web 3
 
 [00 - Apresentaçao da Disciplina](https://gamma.app/embed/u8f06sg6iakdg66)
 
