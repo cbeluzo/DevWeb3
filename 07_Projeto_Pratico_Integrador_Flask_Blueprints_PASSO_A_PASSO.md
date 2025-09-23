@@ -925,9 +925,6 @@ flask run
 
 ---
 
-Excelente 👌 Segue uma **tabela comparativa** com exemplos de configuração da variável `DATABASE_URL` para os principais bancos suportados pelo SQLAlchemy (PostgreSQL, MySQL e SQLite).
-
----
 
 ## 🌐 Exemplos de `DATABASE_URL`
 
@@ -1135,12 +1132,6 @@ Antes de rodar `flask run`, confirme cada item abaixo:
 
 ---
 
-
-Perfeito 👌 Doutor, entendi: o senhor deseja um **guia didático completo** para os principais campos de formulários em Flask-WTF, cobrindo **textos, senhas, emails, números, áreas de texto, selects, checkboxes, radios, listas múltiplas, tabelas, etc.**, já com explicações e exemplos comentados.
-
-Segue a primeira versão em **Markdown**, organizada por tipo de campo:
-
----
 
 # 📝 Guia Prático – Campos mais utilizados em Flask-WTF
 
@@ -1368,10 +1359,6 @@ class CadastroForm(FlaskForm):
 * Sempre combine com **validadores** (`DataRequired`, `Email`, `Length`, `NumberRange`, etc.).
 * A renderização no HTML pode ser feita direto com `{{ form.campo() }}` ou via macros para padronizar layout.
 
----
-
-Excelente 👌
-Aqui está a **versão em tabela comparativa (Markdown)**, servindo como **guia rápido** para consulta em aula ou material didático:
 
 ---
 
