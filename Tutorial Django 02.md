@@ -273,6 +273,52 @@ def projeto_detalhe(request, projeto_id):
 
 ---
 
+Em projetos/urls.py, incluir:
+
+```python
+
+# projetos/urls.py
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="index"),
+    # Nova rota dinâmica que recebe o ID do projeto
+    path("projeto/<int:projeto_id>/", views.projeto_detalhe, name="projeto_detalhe"),
+    path('login/', views.login_view, name='login'),
+    path('logout/', views.logout_view, name='logout')
+]
+```
+
+
+
+No arquivo projetos/templates/projetos/index.html, logo após:
+
+```
+<body class="p-4">
+    <h1 class="mb-4">Projetos Cadastrados</h1>
+```
+
+adicionar:
+
+```
+  <p>Olá, {{ user.first_name }}  {{ user.last_name }}!</p>
+  <p>Seu e-mail: {{ user.email }}</p>
+  {% if user.is_staff %}
+    <p>Você é um administrador.</p>
+  {% endif %}
+```
+
+Adicionar também ao final:
+
+```
+<a href="{% url 'logout' %}" class="list-group-item list-group-item-action">
+     <strong>Sair</strong>
+ </a>
+</body>
+</html>
+```
+
 ## 🧾 3. Criando formulários elegantes com `django-crispy-forms`
 
 Os formulários padrões do Django funcionam bem, mas são simples visualmente.
